@@ -4,10 +4,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tea House My</title>
+
+    <!-- google manrope font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- dancing font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400..700&family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- this script added only to keep active git live link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+            // need to learn not work
+    //         fontFamily: {
+    //   'manrope': ['"Manrope"', '"sans-serif"'],
+    //   'roboto': [ "Roboto", 'sans-serif'],
+    //         },
+          extend: {
+            colors: {
+              clifford: '#da373d',
+            }
+          }
+        }
+      }
+    </script>
     <link rel="stylesheet" href="css/main.css">
+    <style>
+    .manrope {
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+    }
+    .roboto {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    }
+    .dancing {
+        font-family: "Dancing Script", cursive;}
+    </style>
 </head>
-<body>
-    <h1>this is mym tea house</h1>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit, soluta! Eum quia, ex eaque sint dolor at quos dolorum. Mollitia!</p>
+<body class="max-w-screen-2xl mx-auto">
+    <!-- header section start here -->
+    <header>
+        <nav class="w-11/12 mx-auto bg-stone-500 flex lg:flex-row justify-between items-center">
+            <div class="h-16 lg:h-24 px-2 ml-1 rounded-3xl flex justify-center bg-gradient-to-r from-red-800 to-orange-400">
+                <h1 class="text-center mx-0 my-auto font-extrabold text-6xl dancing"><span>TEA</span> HOUSE</h1>
+            </div>
+          <div class="hidden lg:block">
+            <ul class="flex justify-end items-center manrope text-xl font-semibold italic text-slate-950 py-6 lg:py-2">
+                <li class="mx-1 border-2 border-slate-800 py-1 px-2 bg-slate-400 rounded-2xl cursor-pointer">Home</li>
+                <li class="mx-1 border-2 border-slate-800 py-1 px-2 bg-slate-400 rounded-2xl cursor-pointer">Service</li>
+                <li class="mx-1 border-2 border-slate-800 py-1 px-2 bg-slate-400 rounded-2xl cursor-pointer">Blogs</li>
+                <li class="mx-1 border-2 border-slate-800 py-1 px-2 bg-slate-400 rounded-2xl cursor-pointer">About us</li>
+                <li class="mx-1 border-2 border-slate-800 py-1 px-2 bg-slate-400 rounded-2xl cursor-pointer">Contact us</li>
+            </ul>
+          </div>
+          <div class="lg:hidden block">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-10 hover:cursor-pointer">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+              </svg>
+              
+          </div>
+        </nav>
+    </header>
+
+    <!-- main part start here -->
+    <main class="my-12 lg:my-24">
+     <!-- banner section start here -->  
+    <section class="w-11/12 mx-auto flex flex-col lg:flex-row justify-between items-center">
+        <div>
+            <h1 class="manrope font-extrabold text-5xl lg:text-7xl">It's good <br>tea time at The <br> Tea House</h1><br>
+            <p class="roboto font-normal text-lg text-gray-600">Tea and Botanical Solutions Supplier Give Optimum <br> Satisfaction To Your Taste Buds.</p> <br>
+            <button class="flex justify-center items-center h-14 bg-gradient-to-r from-orange-500 to-red-500 text-center font-bold text-lg text-white rounded-lg px-4">Explore More  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 pl-1 text-lg">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+              </svg>
+              </button>
+        </div>
+        <div class="relative">
+            <!-- banner imag -->
+            <div class="w-full">
+                <img src="./images/banner.png" alt="">
+            </div>
+            <!-- card -->
+            <div class="absolute flex items-center bg-white shadow-lg px-2 py-2 lg:py-4 md:px-10 rounded-xl top-52 md:top-80 md:left-32 lg:left-28">
+                <!-- icon -->
+                <div class="text-2xl">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-8 text-amber-500">
+                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+                      </svg>                      
+                </div>
+                <div class="ml-2 ">
+                    <h2 class="lg:text-2xl font-bold">5.00</h2>
+                    <p class="text-gray-500">Trust Pilot Ratings</p>
+                </div>
+            </div>
+        </div>
+    </section> 
+
+    <!-- features section strat here-->
+    </main>
+
+
 </body>
 </html>
