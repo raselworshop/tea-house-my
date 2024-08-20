@@ -14,6 +14,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400..700&family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- this script added only to keep active git live link -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -290,9 +293,69 @@
             </div>
         </div>
      </section>
-
     </main>
-
-
+    <!-- footer section start here -->
+     <footer class="bg-orange-100 text-gray-700 py-10 px-4 md:px-16">
+        <div class="w-9/12 mx-auto">
+            <!-- logo -->
+            <div class="mb-8 flex justify-between">
+                <img src="./images/cup.png" alt="">
+                <div class="flex items-center gap-2">
+                    <h3>Ready to get started?</h3>
+                    <button class="flex justify-center items-center bg-gradient-to-r from-orange-500 to-red-500 text-center font-bold text-lg text-white rounded-lg px-3 py-2">Get Started</button>
+                </div>
+            </div>
+            <!-- links -->
+             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <!-- first columns -->
+                 <div>
+                    <h3 class="font-semibold text-lg mb-3">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a class="hover:text-orange-600" href="#">Home</a></li>
+                        <li><a class="hover:text-orange-600" href="#">About</a></li>
+                        <li><a class="hover:text-orange-600" href="#">insurance</a></li>
+                        <li><a class="hover:text-orange-600" href="#">Privacy Policy</a></li>
+                    </ul>
+                 </div>
+                 <!-- second columns -->
+                 <div>
+                    <h3 class="font-semibold text-lg mb-3">Our Service</h3>
+                    <ul class="space-y-2">
+                        <li><a class="hover:text-orange-600" href="#">Life Insurance</a></li>
+                        <li><a class="hover:text-orange-600" href="#">Car Insurance</a></li>
+                        <li><a class="hover:text-orange-600" href="#">Health Insurance</a></li>
+                        <li><a class="hover:text-orange-600" href="#">House Insurance</a></li>
+                    </ul>
+                 </div>
+                 <!-- 3rd columns -->
+                 <div>
+                    <h3 class="font-semibold text-lg mb-3">Help</h3>
+                    <ul class="space-y-2">
+                        <li><a class="hover:text-orange-600" href="#">FAQs</a></li>
+                        <li><a class="hover:text-orange-600" href="#">Contact Us</a></li>
+                    </ul>
+                 </div>
+                 <!-- 4th columns -->
+                  <div>
+                    <h2 class="font-semibold text-lg mb-3">Subscribe to our newsletter</h2>
+                    <div class="flex space-y-4">
+                        <input class="bg-transparent border-b-2 border-black w-4/6 outline-none" type="text" placeholder="Email address" required>
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 bg-orange-600 rounded-full text-white inline-flex justify-center items-center hover:cursor-pointer">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                          </svg>                          
+                    </div>
+                    <div class="flex justify-between w-2/5 mb-2 mt-8">
+                        <i class="fa-brands fa-facebook-f hover:cursor-pointer hover:text-orange-600"></i>
+                        <i class="fa-brands fa-twitter hover:cursor-pointer hover:text-orange-600"></i>
+                        <i class="fa-brands fa-square-instagram hover:cursor-pointer hover:text-orange-600"></i>
+                    </div>
+                  </div>
+             </div>
+             <div class="text-center pt-4 mt-4">
+                <p class="text-sm text-gray-600">&copy;2027 UIDesign.to - All rights reserved.</p>
+             </div>
+        </div>
+     </footer>
 </body>
 </html>
